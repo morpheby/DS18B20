@@ -48,6 +48,7 @@ class DS18B20 {
         uint8_t getResolution();
         void setResolution(uint8_t resolution);
         uint8_t getPowerMode();
+        uint8_t setGlobalPowerMode(uint8_t power);
         uint8_t getFamilyCode();
         void getAddress(uint8_t address[]);
         void doConversion();

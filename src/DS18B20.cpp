@@ -163,6 +163,10 @@ uint8_t DS18B20::getPowerMode() {
     return selectedPowerMode;
 }
 
+uint8_t DS18B20::setGlobalPowerMode(uint8_t power) {
+    globalPowerMode = power;
+}
+
 uint8_t DS18B20::getFamilyCode() {
     return selectedAddress[0];
 }
